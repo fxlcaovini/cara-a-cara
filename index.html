@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara a Cara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons8-cocô-32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="title">
+    </div>
+    <div id="game-container">
+        
+        
+        <div id="tabuleiro">
+            <!-- Slots para personagens -->
+            <div class="personagem-slot">
+                <img src="/samerda.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">SAVERDA</div>
+
+                
+            </div>
+            <div class="personagem-slot">
+                <img src="/jukken.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">JUKKEN</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/golias.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">GOLIAS</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/mona.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">GALAHAD</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/brayan.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">BRAYAN</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/kinki.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">KINKI</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/devil.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">DEVIL</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/navori.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">NAVORI</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/andre.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">ANDRE</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/deep.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">DEEP</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/eu.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">PENEDO</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/azir.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">AZIR</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/dio.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">DIO</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/richard.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">RICHARD</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/mae.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">MAE SAVERDA</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/fahah.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">FAHAH</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/cassandra.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">CASSANDRA</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/gragas.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">GRAGAS</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/satheus.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">MATHEUS</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/jully.png" alt="" width="200px" height="200">
+                <div class="nome-personagem">JULLY</div>
+
+            </div>
+            <div class="personagem-slot">
+                <img src="/leozex.png" width="200px" height="200">
+                <div class="nome-personagem">LEOZEX</div>
+
+            </div>
+            
+           
+
+            
+        </div>
+<br>
+<div id="botoes-container">
+    <button id="retroceder-btn">RETROCEDER</button>
+    <button id="abaixar-btn">ABAIXAR</button>
+    <button id="escolher-btn">ESCOLHER</button>
+</div>
+
+
+    </div>
+    <div id="popup-escolha" class="popup">
+        <div class="popup-content">
+            <h2>ESCOLHA SEU PERSONAGEM</h2>
+            <div id="opcoes-personagens">
+                <div class="personagem-slot" data-nome="SAVERDA">
+                    <img src="/samerda.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">SAVERDA</div>
+                </div>
+                <div class="personagem-slot" data-nome="JUKKEN">
+                    <img src="/jukken.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">JUKKEN</div>
+                </div>
+                <div class="personagem-slot" data-nome="GOLIAS">
+                    <img src="/golias.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">GOLIAS</div>
+                </div>
+                <div class="personagem-slot" data-nome="GALAHAD">
+                    <img src="/mona.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">GALAHAD</div>
+                </div>
+                <div class="personagem-slot" data-nome="BRAYAN">
+                    <img src="/brayan.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">BRAYAN</div>
+                </div>
+                <div class="personagem-slot" data-nome="KINKI">
+                    <img src="/kinki.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">KINKI</div>
+                </div>
+                <div class="personagem-slot" data-nome="DEVIL">
+                    <img src="/devil.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">DEVIL</div>
+                </div>
+                <div class="personagem-slot" data-nome="NAVORI">
+                    <img src="/navori.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">NAVORI</div>
+                </div>
+                <div class="personagem-slot" data-nome="ANDRE">
+                    <img src="/andre.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">ANDRE</div>
+                </div>
+                <div class="personagem-slot" data-nome="DEEP">
+                    <img src="/deep.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">DEEP</div>
+                </div>
+                <div class="personagem-slot" data-nome="PENEDO">
+                    <img src="/eu.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">PENEDO</div>
+                </div>
+                <div class="personagem-slot" data-nome="AZIR">
+                    <img src="/azir.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">AZIR</div>
+                </div>
+                <div class="personagem-slot" data-nome="DIO">
+                    <img src="/dio.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">DIO</div>
+                </div>
+                <div class="personagem-slot" data-nome="RICHARD">
+                    <img src="/richard.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">RICHARD</div>
+                </div>
+                <div class="personagem-slot" data-nome="MAE SAVERDA">
+                    <img src="/mae.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">MAE SAVERDA</div>
+                </div>
+                <div class="personagem-slot" data-nome="FAHAH">
+                    <img src="/fahah.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">FAHAH</div>
+                </div>
+                <div class="personagem-slot" data-nome="CASSANDRA">
+                    <img src="/cassandra.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">CASSANDRA</div>
+                </div>
+                <div class="personagem-slot" data-nome="GRAGAS">
+                    <img src="/gragas.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">GRAGAS</div>
+                </div>
+                <div class="personagem-slot" data-nome="MATHEUS">
+                    <img src="/satheus.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">MATHEUS</div>
+                </div>
+                <div class="personagem-slot" data-nome="JULLY">
+                    <img src="/jully.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">JULLY</div>
+                </div>
+                <div class="personagem-slot" data-nome="LEOZEX">
+                    <img src="/leo.png" alt="Personagem" width="100" height="100">
+                    <div class="nome-personagem">LEOZEX</div>
+                </div>
+                
+            </div>
+            <div id="botoes-container"> 
+            <button id="fechar-popup">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div id="personagem-escolhido-display">
+        <span>Personagem escolhido: </span>
+        <div id="personagem-escolhido-card"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

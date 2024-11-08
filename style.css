@@ -1,0 +1,215 @@
+/* style.css */
+
+body {
+    font-family: "consolas";
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(coco.png);
+    animation: fadeInUp 1s ease-out; /* Animação para o corpo */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#game-container {
+    animation: fadeInUp 1.5s ease-out; /* Animação para o container do jogo */
+}
+
+#tabuleiro {
+    animation: fadeInUp 2s ease-out; /* Animação para o tabuleiro */
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#fechar-popup, #escolher-btn, #retroceder-btn, #abaixar-btn {
+    background-color: #0078d7;
+}
+
+#botoes-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#personagem-escolhido {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 120, 215, 0.3);
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(7, 230px);
+    gap: 20px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.personagem-slot {
+    width: 200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.personagem-slot:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.personagem-slot.selecionado {
+    border: 3px solid #0078d7;
+}
+
+.personagem-slot.desaparecer {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.personagem-slot img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nome-personagem {
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* POPUP STYLES */
+@keyframes popupIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popupOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Começa invisível */
+    visibility: hidden; /* Começa invisível */
+    transition: opacity 0.5s ease-out, visibility 0s 0.5s; /* Transição suave */
+}
+
+.popup.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    animation: popupIn 0.5s ease-out; /* Animação de entrada */
+}
+
+.popup.hide {
+    opacity: 0;
+    visibility: hidden;
+    animation: popupOut 0.5s ease-out; /* Animação de saída */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+#opcoes-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 10px;
+}
+
+#personagem-escolhido-display {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0078d7;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 120, 215, 0.4);
+}
+
+#personagem-escolhido-card {
+    display: none;
+}
+
+/* Button Styles */
+#fechar-popup, #retroceder-btn, #abaixar-btn, #escolher-btn {
+    background-color: #0078d7;
+    color: white;
+}
+
+#fechar-popup:hover, #retroceder-btn:hover, #abaixar-btn:hover, #escolher-btn:hover {
+    background-color: #005bb5;
+}
